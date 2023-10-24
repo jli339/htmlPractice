@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./SignupStyle.css">
+</head>
+
+<body>
+    <div class="box">
+        <div class="forms">
+            <div class="tips">
+                <span class="login-btn">login</span>
+                <span class="register-btn">register</span>
+            </div>
+            <div class="login">
+                <div class="form-title">
+                    <h1>Hello</h1>
+
+                </div>
+                <div class="form">
+                    <div class="username input-item">
+                        <input type="text" class="ipts" id="Lin" value="">
+                    </div>
+                    <div class="password input-item">
+                        <input type="password" class="ipts">
+                    </div>
+
+                    <button class="Lbtn">Login</button>
+
+                </div>
+            </div>
+            <div class="register">
+                <div class="form-title">
+                    <h1>Register</h1>
+
+                </div>
+                <div class="form">
+                    <div class="username input-item">
+                        <input type="text" class="ipts" id="Rin" value="">
+                    </div>
+                    <div class="password input-item">
+                        <input type="password" class="ipts">
+                    </div>
+                    <div class="conform-password input-item">
+                        <input type="password" class="ipts">
+                    </div>
+                    <button class="Rbtn">Register</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script>
+    const login = document.querySelector('.login')
+    const register = document.querySelector('.register')
+    const registerBtn = document.querySelector('.register-btn')
+    const loginBtn = document.querySelector('.login-btn')
+    const LsaveInfo = document.querySelector('.Lbtn')
+    const RsaveInfo = document.querySelector('.Rbtn')
+
+
+
+
+    registerBtn.addEventListener('click', function() {
+        login.style.opacity = '0'
+
+        register.style.opacity = '1'
+        login.style.zIndex = '-1'
+
+        register.style.zIndex = '10'
+        register.style.animation = 'into 1s ease'
+        login.style.animation = 'none'
+
+        registerBtn.style.borderBottom = '4px solid rgb(249, 177, 122)'
+        registerBtn.style.color = '#fff'
+        loginBtn.style.borderBottom = 'none'
+        loginBtn.style.color = 'rgb(100, 108, 154)'
+    })
+    loginBtn.addEventListener('click', function() {
+        login.style.opacity = '1'
+        register.style.opacity = '0'
+
+        login.style.zIndex = '10'
+
+        register.style.zIndex = '-1'
+        login.style.animation = 'into 1s ease'
+        register.style.animation = 'none'
+
+        registerBtn.style.borderBottom = ''
+        registerBtn.style.color = 'rgb(100, 108, 154)'
+        loginBtn.style.borderBottom = '4px solid rgb(249, 177, 122)'
+        loginBtn.style.color = '#fff'
+    })
+
+    LsaveInfo.addEventListener('click', function() {
+        var temp = "Hello," + document.getElementById("Lin").value
+        alert(temp + "! Welcome! We are returning to the product page")
+        location.href = "index.html"
+    })
+
+    RsaveInfo.addEventListener('click', function() {
+        var temp = "Hello," + document.getElementById("Rin").value
+        alert(temp + "! Welcome! We are returning to the product page")
+        location.href = "index.html"
+    })
+</script>
+
+</html>

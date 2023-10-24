@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-dark">
+
+    <header>
+        <nav class="navbar navbar-expand-sm bg-black navbar-dark fixed-top">
+
+            <div class="container-fluid">
+                <!-- 链接 -->
+                <div class="navbar-brand">LOGO HERE</div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Product.html">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="AboutUs.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Signup.html">Signup</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="cart-icon">
+                            <button class="bi bi-cart" style="font-size: 30px; color: #fff; width: 40px; height: 40px; border-radius:50%;border: none;background-color: #ef5f26;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></button>
+
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                    <h5 id="offcanvasRightLabel">cart</h5>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+
+                                <div class="offcanvas-body">
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+    <div class="Mycontainer">
+        <div class="p_box1">
+            <button type="button" class="btn btn-warning">Add to Cart</button>
+        </div>
+        <div class="p_box2"><button type="button" class="btn btn-warning">Add to Cart</button></div>
+        <div class="p_box3"><button type="button" class="btn btn-warning">Add to Cart</button></div>
+        <div class="p_box4"><button type="button" class="btn btn-warning">Add to Cart</button></div>
+        <div class="p_box5"><button type="button" class="btn btn-warning">Add to Cart</button></div>
+        <div class="p_box6"><button type="button" class="btn btn-warning">Add to Cart</button></div>
+
+        <div class="d_box1">Art code: #000 <br>Author: Unknown<br>Created date:2023-01-01 <br>Description:qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq</div>
+        <div class="d_box2">Art code: #001 <br>Author: Unknown<br>Created date:2023-01-01 <br>Description:qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq</div>
+        <div class="d_box3">Art code: #002 <br>Author: Unknown<br>Created date:2023-01-01 <br>Description:qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq</div>
+        <div class="d_box4">Art code: #003 <br>Author: Unknown<br>Created date:2023-01-01 <br>Description:qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq</div>
+        <div class="d_box5">Art code: #004 <br>Author: Unknown<br>Created date:2023-01-01 <br>Description:qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq</div>
+        <div class="d_box6">Art code: #005 <br>Author: Unknown<br>Created date:2023-01-01 <br>Description:qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq</div>
+    </div>
+
+    <script>
+        let cart = document.querySelector("cart-icon");
+    </script>
+</body>
+
+</html>
